@@ -1,0 +1,656 @@
+{
+  "users": [
+    {
+      "avatarUrl": "",
+      "phone": "",
+      "location": "Local Demo",
+      "education": "",
+      "institution": "",
+      "headline": "GigStart Platform Administrator",
+      "bio": "Seeded admin account for local demo review.",
+      "preferredWorkTypes": [],
+      "preferredEmploymentTypes": [],
+      "preferredLocations": [],
+      "experienceLevel": "Intermediate",
+      "selfDeclaredSkills": [],
+      "portfolioLinks": {
+        "linkedin": "",
+        "github": "",
+        "portfolio": "",
+        "figma": "",
+        "kaggle": "",
+        "other": ""
+      },
+      "privacy": {
+        "profileVisibility": "PRIVATE",
+        "showCertificates": false,
+        "showScores": false,
+        "showVerifiedSkills": false,
+        "showSelfDeclaredSkills": false
+      },
+      "notifications": {
+        "jobUnlocked": true,
+        "certificateIssued": true,
+        "applicationUpdated": true,
+        "moduleReminder": false
+      },
+      "updatedAt": "2026-05-04",
+      "id": "admin_001",
+      "name": "GigStart Admin",
+      "email": "admin@gigstart.local",
+      "password": "admin123",
+      "role": "ADMIN",
+      "interest": [],
+      "targetRole": "Platform Admin",
+      "activeCareerPathId": null,
+      "createdAt": "2026-05-04"
+    },
+    {
+      "avatarUrl": "",
+      "phone": "",
+      "location": "Jakarta, Indonesia",
+      "education": "Computer Science Student",
+      "institution": "BINUS University",
+      "headline": "Aspiring Data Analyst Intern",
+      "bio": "Interested in data analytics, SQL, dashboards, and business reporting.",
+      "preferredWorkTypes": [
+        "Remote",
+        "Hybrid"
+      ],
+      "preferredEmploymentTypes": [
+        "Internship"
+      ],
+      "preferredLocations": [
+        "Jakarta",
+        "Remote"
+      ],
+      "experienceLevel": "Beginner",
+      "selfDeclaredSkills": [
+        "Excel",
+        "Python",
+        "Communication"
+      ],
+      "portfolioLinks": {
+        "linkedin": "https://linkedin.com/in/ikbarfaiz",
+        "github": "https://github.com/ikbarfaiz",
+        "portfolio": "",
+        "figma": "",
+        "kaggle": "",
+        "other": ""
+      },
+      "privacy": {
+        "profileVisibility": "PUBLIC",
+        "showCertificates": true,
+        "showScores": true,
+        "showVerifiedSkills": true,
+        "showSelfDeclaredSkills": true
+      },
+      "notifications": {
+        "jobUnlocked": true,
+        "certificateIssued": true,
+        "applicationUpdated": true,
+        "moduleReminder": false
+      },
+      "updatedAt": "2026-05-04",
+      "id": "user_001",
+      "name": "Ikbar Faiz",
+      "email": "faiz@gigstart.local",
+      "password": "user123",
+      "role": "USER",
+      "interest": [
+        "Data",
+        "Analytics"
+      ],
+      "targetRole": "Data Analyst Intern",
+      "activeCareerPathId": "path_da",
+      "createdAt": "2026-05-04"
+    }
+  ],
+  "careerPaths": [
+    {
+      "id": "path_da",
+      "code": "DA",
+      "name": "Data Analyst Intern Readiness",
+      "level": "Beginner",
+      "description": "Prepare users for entry-level data analyst internship roles.",
+      "passingGrade": 75,
+      "moduleIds": [
+        "mod_sql",
+        "mod_cleaning",
+        "mod_dashboard",
+        "mod_final"
+      ],
+      "relatedJobIds": [
+        "job_da_001",
+        "job_bi_001",
+        "job_report_001"
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "id": "path_fe",
+      "code": "FE",
+      "name": "Frontend Developer Intern Readiness",
+      "level": "Beginner",
+      "description": "Prepare users for HTML, CSS, JavaScript, Git, and responsive layout work.",
+      "passingGrade": 75,
+      "moduleIds": [],
+      "relatedJobIds": [],
+      "status": "PLANNED"
+    },
+    {
+      "id": "path_ux",
+      "code": "UX",
+      "name": "UI/UX Designer Intern Readiness",
+      "level": "Beginner",
+      "description": "Prepare users for basic research, wireframing, user flow, and Figma tasks.",
+      "passingGrade": 70,
+      "moduleIds": [],
+      "relatedJobIds": [],
+      "status": "PLANNED"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod_sql",
+      "careerPathId": "path_da",
+      "title": "SQL Basic",
+      "description": "Learn basic SQL query structure for data analysis.",
+      "material": "SQL is used to retrieve and manage data from relational databases. A basic query can use SELECT, FROM, WHERE, and ORDER BY.",
+      "passingGrade": 75,
+      "order": 1,
+      "moduleType": "Quiz + SQL Task",
+      "assessmentId": "assess_sql",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_cleaning",
+      "careerPathId": "path_da",
+      "title": "Data Cleaning Basic",
+      "description": "Learn how to prepare messy datasets before analysis.",
+      "material": "Data cleaning checks duplicates, missing values, inconsistent formats, and values that are not ready for analysis.",
+      "passingGrade": 75,
+      "order": 2,
+      "moduleType": "Written Task",
+      "assessmentId": "assess_cleaning",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_dashboard",
+      "careerPathId": "path_da",
+      "title": "Dashboard Interpretation",
+      "description": "Learn to read dashboard signals and turn them into business insight.",
+      "material": "A dashboard should be interpreted by comparing metrics, identifying movement, and translating findings into actions.",
+      "passingGrade": 75,
+      "order": 3,
+      "moduleType": "Case Study",
+      "assessmentId": "assess_dashboard",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_final",
+      "careerPathId": "path_da",
+      "title": "Final Assessment",
+      "description": "Complete a mini case study that combines data needs, cleaning, SQL, dashboard insight, and recommendation.",
+      "material": "Final assessment validates whether a user can connect data preparation, SQL query, dashboard interpretation, and recommendation.",
+      "passingGrade": 75,
+      "order": 4,
+      "moduleType": "Mini Case Study",
+      "assessmentId": "assess_final",
+      "status": "ACTIVE"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "assess_sql",
+      "moduleId": "mod_sql",
+      "title": "SQL Basic Assessment",
+      "components": [
+        {
+          "label": "Multiple Choice Quiz",
+          "weight": 40,
+          "questionIds": [
+            "q_sql_001",
+            "q_sql_002"
+          ]
+        },
+        {
+          "label": "SQL Written Task",
+          "weight": 60,
+          "questionIds": [
+            "q_sql_003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_cleaning",
+      "moduleId": "mod_cleaning",
+      "title": "Data Cleaning Basic Assessment",
+      "components": [
+        {
+          "label": "Written Cleaning Plan",
+          "weight": 100,
+          "questionIds": [
+            "q_clean_001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_dashboard",
+      "moduleId": "mod_dashboard",
+      "title": "Dashboard Interpretation Assessment",
+      "components": [
+        {
+          "label": "Dashboard Case Study",
+          "weight": 100,
+          "questionIds": [
+            "q_dash_001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_final",
+      "moduleId": "mod_final",
+      "title": "Final Data Analyst Readiness Assessment",
+      "components": [
+        {
+          "label": "Mini Case Study",
+          "weight": 100,
+          "questionIds": [
+            "q_final_001"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_sql_001",
+      "assessmentId": "assess_sql",
+      "type": "MULTIPLE_CHOICE",
+      "question": "Which SQL clause is used to filter rows?",
+      "options": [
+        "SELECT",
+        "WHERE",
+        "GROUP BY",
+        "ORDER BY"
+      ],
+      "correctAnswer": "WHERE",
+      "maxScore": 20,
+      "order": 1
+    },
+    {
+      "id": "q_sql_002",
+      "assessmentId": "assess_sql",
+      "type": "MULTIPLE_CHOICE",
+      "question": "Which SQL keyword is used to sort data?",
+      "options": [
+        "WHERE",
+        "JOIN",
+        "ORDER BY",
+        "LIMIT"
+      ],
+      "correctAnswer": "ORDER BY",
+      "maxScore": 20,
+      "order": 2
+    },
+    {
+      "id": "q_sql_003",
+      "assessmentId": "assess_sql",
+      "type": "CODE_ANSWER",
+      "question": "Write an SQL query to select name and score from applicants where score is greater than or equal to 75.",
+      "maxScore": 90,
+      "rubricId": "rubric_sql_basic",
+      "order": 3
+    },
+    {
+      "id": "q_clean_001",
+      "assessmentId": "assess_cleaning",
+      "type": "TEXT_AREA",
+      "question": "A dataset contains duplicate rows, missing values, and inconsistent date formats. Explain three cleaning steps you would do before analysis.",
+      "maxScore": 100,
+      "rubricId": "rubric_cleaning_basic",
+      "order": 1
+    },
+    {
+      "id": "q_dash_001",
+      "assessmentId": "assess_dashboard",
+      "type": "TEXT_AREA",
+      "question": "A sales dashboard shows revenue increased by 20%, but customer complaints increased by 35%. Write a short insight and one business recommendation.",
+      "maxScore": 100,
+      "rubricId": "rubric_dashboard_interpretation",
+      "order": 1
+    },
+    {
+      "id": "q_final_001",
+      "assessmentId": "assess_final",
+      "type": "TEXT_AREA",
+      "question": "A company wants to identify high-performing applicants from a dataset. Write what data you need, how you would clean it, one SQL query example, one dashboard insight, and one recommendation.",
+      "maxScore": 100,
+      "rubricId": "rubric_final_assessment",
+      "order": 1
+    }
+  ],
+  "rubrics": [
+    {
+      "id": "rubric_sql_basic",
+      "name": "SQL Basic Query Rubric",
+      "criteria": [
+        {
+          "id": "crit_select",
+          "label": "Uses SELECT",
+          "maxScore": 10,
+          "type": "KEYWORD",
+          "requiredKeywords": [
+            "select"
+          ]
+        },
+        {
+          "id": "crit_name",
+          "label": "Selects name",
+          "maxScore": 10,
+          "type": "KEYWORD",
+          "requiredKeywords": [
+            "name"
+          ]
+        },
+        {
+          "id": "crit_score",
+          "label": "Selects score",
+          "maxScore": 10,
+          "type": "KEYWORD",
+          "requiredKeywords": [
+            "score"
+          ]
+        },
+        {
+          "id": "crit_from",
+          "label": "Uses FROM",
+          "maxScore": 10,
+          "type": "KEYWORD",
+          "requiredKeywords": [
+            "from"
+          ]
+        },
+        {
+          "id": "crit_table",
+          "label": "Uses applicants table",
+          "maxScore": 10,
+          "type": "KEYWORD",
+          "requiredKeywords": [
+            "applicants"
+          ]
+        },
+        {
+          "id": "crit_where",
+          "label": "Uses WHERE",
+          "maxScore": 10,
+          "type": "KEYWORD",
+          "requiredKeywords": [
+            "where"
+          ]
+        },
+        {
+          "id": "crit_condition",
+          "label": "Correct score condition",
+          "maxScore": 20,
+          "type": "REGEX",
+          "pattern": "score\\s*(>=|>)\\s*(75|74)"
+        },
+        {
+          "id": "crit_readability",
+          "label": "Readability",
+          "maxScore": 10,
+          "type": "LENGTH",
+          "minLength": 20
+        }
+      ]
+    },
+    {
+      "id": "rubric_cleaning_basic",
+      "name": "Data Cleaning Written Rubric",
+      "criteria": [
+        {
+          "id": "clean_duplicates",
+          "label": "Mentions duplicate handling",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "duplicate",
+            "duplicates",
+            "duplikat"
+          ]
+        },
+        {
+          "id": "clean_missing",
+          "label": "Mentions missing values",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "missing",
+            "null",
+            "empty",
+            "kosong",
+            "hilang"
+          ]
+        },
+        {
+          "id": "clean_date",
+          "label": "Mentions date formatting",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "date",
+            "tanggal",
+            "format"
+          ]
+        },
+        {
+          "id": "clean_order",
+          "label": "Explains cleaning order",
+          "maxScore": 20,
+          "type": "SENTENCE_COUNT",
+          "minSentences": 3
+        },
+        {
+          "id": "clean_clarity",
+          "label": "Clarity",
+          "maxScore": 20,
+          "type": "LENGTH",
+          "minLength": 60
+        }
+      ]
+    },
+    {
+      "id": "rubric_dashboard_interpretation",
+      "name": "Dashboard Interpretation Rubric",
+      "criteria": [
+        {
+          "id": "dash_revenue",
+          "label": "Mentions revenue increase",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "requiredKeywords": [
+            "revenue",
+            "20"
+          ]
+        },
+        {
+          "id": "dash_complaints",
+          "label": "Mentions complaints increase",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "requiredKeywords": [
+            "complaint",
+            "35"
+          ]
+        },
+        {
+          "id": "dash_insight",
+          "label": "Provides insight",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "insight",
+            "means",
+            "indicates",
+            "shows",
+            "menunjukkan"
+          ]
+        },
+        {
+          "id": "dash_recommendation",
+          "label": "Provides recommendation",
+          "maxScore": 25,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "recommend",
+            "should",
+            "improve",
+            "investigate",
+            "action",
+            "rekomendasi"
+          ]
+        },
+        {
+          "id": "dash_clarity",
+          "label": "Clarity",
+          "maxScore": 15,
+          "type": "LENGTH",
+          "minLength": 80
+        }
+      ]
+    },
+    {
+      "id": "rubric_final_assessment",
+      "name": "Final Assessment Rubric",
+      "criteria": [
+        {
+          "id": "final_data",
+          "label": "Identifies needed data",
+          "maxScore": 15,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "score",
+            "applicant",
+            "experience",
+            "skill",
+            "data"
+          ]
+        },
+        {
+          "id": "final_clean",
+          "label": "Explains cleaning step",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "clean",
+            "missing",
+            "duplicate",
+            "format"
+          ]
+        },
+        {
+          "id": "final_sql",
+          "label": "Provides SQL query",
+          "maxScore": 25,
+          "type": "KEYWORD",
+          "requiredKeywords": [
+            "select",
+            "from",
+            "where"
+          ]
+        },
+        {
+          "id": "final_dashboard",
+          "label": "Provides dashboard insight",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "dashboard",
+            "chart",
+            "trend",
+            "insight",
+            "visual"
+          ]
+        },
+        {
+          "id": "final_recommendation",
+          "label": "Provides recommendation",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "recommend",
+            "should",
+            "decision",
+            "action"
+          ]
+        }
+      ]
+    }
+  ],
+  "progress": [],
+  "submissions": [],
+  "certificates": [],
+  "jobs": [
+    {
+      "id": "job_da_001",
+      "title": "Data Analyst Intern",
+      "company": "PT Example Digital",
+      "location": "Jakarta",
+      "workType": "Hybrid",
+      "employmentType": "Internship",
+      "description": "Analyze data, create reports, and support dashboard development.",
+      "requiredModuleIds": [
+        "mod_sql",
+        "mod_cleaning"
+      ],
+      "minimumScore": 75,
+      "status": "OPEN"
+    },
+    {
+      "id": "job_bi_001",
+      "title": "BI Intern",
+      "company": "DataWorks",
+      "location": "Remote",
+      "workType": "Remote",
+      "employmentType": "Internship",
+      "description": "Assist BI team by interpreting dashboards and preparing business reports.",
+      "requiredModuleIds": [
+        "mod_sql",
+        "mod_dashboard"
+      ],
+      "minimumScore": 75,
+      "status": "OPEN"
+    },
+    {
+      "id": "job_report_001",
+      "title": "Reporting Intern",
+      "company": "Insight Labs",
+      "location": "Bandung",
+      "workType": "Onsite",
+      "employmentType": "Internship",
+      "description": "Create weekly reporting summaries from cleaned business datasets.",
+      "requiredModuleIds": [
+        "mod_sql",
+        "mod_cleaning",
+        "mod_dashboard"
+      ],
+      "minimumScore": 75,
+      "status": "OPEN"
+    }
+  ],
+  "applications": []
+}
