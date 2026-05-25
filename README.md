@@ -6,7 +6,7 @@ Proyek ini dikembangkan dengan mengadopsi pendekatan siklus hidup pengembangan p
 
 ---
 
-## 🌟 Fitur Utama
+## Fitur Utama
 
 Sistem GigStart membagi fungsionalitasnya menjadi beberapa bagian utama:
 
@@ -27,7 +27,7 @@ Sistem GigStart membagi fungsionalitasnya menjadi beberapa bagian utama:
 
 ---
 
-## 🏗️ Arsitektur Sistem
+## Arsitektur Sistem
 
 GigStart dibangun menggunakan arsitektur **Layered Pattern** untuk memisahkan tanggung jawab dan menjaga modularitas kode skala *enterprise*:
 
@@ -46,11 +46,11 @@ Database Layer
 ```
 
 **Alur Data Request:**
-`User` ➡️ `Frontend` ➡️ `REST API` ➡️ `Controller` ➡️ `Service / Business Logic` ➡️ `Repository` ➡️ `Database`
+`User` - `Frontend` - `REST API` - `Controller` - `Service / Business Logic` - `Repository` - `Database`
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 - **Frontend:** HTML5, Vanilla CSS (Custom Properties & Modern Layout), Vanilla JavaScript (DOM Rendering Dinamis & SPA Routing).
 - **Backend/API:** Node.js, Express.js (RESTful API).
@@ -59,7 +59,7 @@ Database Layer
 
 ---
 
-## 🚀 Alur Deployment
+## Alur Deployment
 
 Aplikasi dipublikasikan (*deploy*) dengan alur otomatisasi berikut:
 
@@ -72,7 +72,7 @@ Aplikasi dipublikasikan (*deploy*) dengan alur otomatisasi berikut:
 
 ---
 
-## 💻 Cara Menjalankan Proyek di Lokal
+## Cara Menjalankan Proyek di Lokal
 
 Jika kamu ingin mengembangkan atau menguji proyek GigStart di komputermu sendiri:
 
@@ -96,7 +96,7 @@ Jika kamu ingin mengembangkan atau menguji proyek GigStart di komputermu sendiri
 
 ---
 
-## 📋 Pengujian & Kualitas (QA)
+## Pengujian & Kualitas (QA)
 
 Untuk menjaga sistem tetap andal (*reliable*), kami menerapkan beberapa level pengujian:
 - **Unit Testing:** Menguji fungsi-fungsi utilitas kecil.
