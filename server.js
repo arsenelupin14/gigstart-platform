@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -22,11 +23,18 @@ app.post('/api/data', (req, res) => {
 });
 
 // Explicitly serve static files
-app.use(express.static(__dirname));
+const staticPath = fs.existsSync(path.join(__dirname, 'dist')) 
+  ? path.join(__dirname, 'dist') 
+  : __dirname;
+
+app.use(express.static(staticPath));
 
 // SPA Fallback
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  const indexPath = fs.existsSync(path.join(__dirname, 'dist', 'index.html'))
+    ? path.join(__dirname, 'dist', 'index.html')
+    : path.join(__dirname, 'index.html');
+  res.sendFile(indexPath);
 });
 
 // For Vercel Serverless compatibility

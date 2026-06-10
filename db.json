@@ -134,9 +134,17 @@
       "level": "Beginner",
       "description": "Prepare users for HTML, CSS, JavaScript, Git, and responsive layout work.",
       "passingGrade": 75,
-      "moduleIds": [],
-      "relatedJobIds": [],
-      "status": "PLANNED"
+      "moduleIds": [
+        "mod_fe_htmlcss",
+        "mod_fe_javascript",
+        "mod_fe_git",
+        "mod_fe_final"
+      ],
+      "relatedJobIds": [
+        "job_fe_001",
+        "job_fe_002"
+      ],
+      "status": "ACTIVE"
     },
     {
       "id": "path_ux",
@@ -145,9 +153,17 @@
       "level": "Beginner",
       "description": "Prepare users for basic research, wireframing, user flow, and Figma tasks.",
       "passingGrade": 70,
-      "moduleIds": [],
-      "relatedJobIds": [],
-      "status": "PLANNED"
+      "moduleIds": [
+        "mod_ux_persona",
+        "mod_ux_wireframe",
+        "mod_ux_design",
+        "mod_ux_final"
+      ],
+      "relatedJobIds": [
+        "job_ux_001",
+        "job_ux_002"
+      ],
+      "status": "ACTIVE"
     }
   ],
   "modules": [
@@ -197,6 +213,102 @@
       "order": 4,
       "moduleType": "Mini Case Study",
       "assessmentId": "assess_final",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_ux_persona",
+      "careerPathId": "path_ux",
+      "title": "UX Research & User Persona",
+      "description": "Learn user empathy, interviewing, empathy maps, and constructing user personas.",
+      "material": "UX research is about understanding user behaviors, needs, and motivations through observations, interviews, and feedback. User Personas represent archetypical users whose goals and characteristics represent the needs of a larger group.",
+      "passingGrade": 70,
+      "order": 1,
+      "moduleType": "Written Task",
+      "assessmentId": "assess_ux_persona",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_ux_wireframe",
+      "careerPathId": "path_ux",
+      "title": "User Flow & Wireframing",
+      "description": "Learn Information Architecture, User Flows, and wireframing for navigability.",
+      "material": "Information Architecture patterns establish how content is structured. User Flows define the paths user take to accomplish tasks, and wireframes are low-fidelity blueprints that outline layout structure.",
+      "passingGrade": 70,
+      "order": 2,
+      "moduleType": "Written Task",
+      "assessmentId": "assess_ux_wireframe",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_ux_design",
+      "careerPathId": "path_ux",
+      "title": "Visual Design & Figma Basics",
+      "description": "Master layout principles, accessibility guidelines, and component design in Figma.",
+      "material": "Visual Design centers on hierarchy, typography, grids, and colors. Figma features like Auto Layout enable responsive layouts. Accessibility standards like WCAG AA require a minimum 4.5:1 color contrast ratio.",
+      "passingGrade": 70,
+      "order": 3,
+      "moduleType": "Quiz + Figma Task",
+      "assessmentId": "assess_ux_design",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_ux_final",
+      "careerPathId": "path_ux",
+      "title": "UI/UX Final Capstone Assessment",
+      "description": "Combine research, wireframing, flow, and high-fidelity styling into a portfolio case study.",
+      "material": "The Capstone project assesses your end-to-end design process, from identifying a user problem to outlining flows, designing mockups, and presenting a cohesive design case study.",
+      "passingGrade": 70,
+      "order": 4,
+      "moduleType": "Mini Case Study",
+      "assessmentId": "assess_ux_final",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_fe_htmlcss",
+      "careerPathId": "path_fe",
+      "title": "HTML & CSS Basics",
+      "description": "Learn semantic markup, CSS box model, responsive layouts, and Flexbox/Grid systems.",
+      "material": "HTML provides page structure with semantic elements like <header>, <nav>, <main>, and <section>. CSS styles elements, applying the Box Model (margin, border, padding, content). Responsive designs use Media Queries and layout models like Flexbox and CSS Grid.",
+      "passingGrade": 75,
+      "order": 1,
+      "moduleType": "Quiz + Code Task",
+      "assessmentId": "assess_fe_htmlcss",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_fe_javascript",
+      "careerPathId": "path_fe",
+      "title": "JavaScript Core & DOM Manipulation",
+      "description": "Master variables, array methods, functions, event listeners, and dynamic UI updates.",
+      "material": "JavaScript adds interactivity to web pages. Developers use event listeners (like click events) to capture user input, manipulate the Document Object Model (DOM) to update content dynamically, and filter arrays of data.",
+      "passingGrade": 75,
+      "order": 2,
+      "moduleType": "Code/Written Task",
+      "assessmentId": "assess_fe_javascript",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_fe_git",
+      "careerPathId": "path_fe",
+      "title": "Git & Version Control",
+      "description": "Understand code management, branching strategy, staging, and pushing changes.",
+      "material": "Git manages codebase history. Key workflows include checking out a branch (git checkout -b <name>), staging files (git add .), committing changes with a message (git commit -m 'msg'), and pushing to a remote (git push origin <branch>).",
+      "passingGrade": 75,
+      "order": 3,
+      "moduleType": "Written Task",
+      "assessmentId": "assess_fe_git",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "mod_fe_final",
+      "careerPathId": "path_fe",
+      "title": "Frontend Capstone Assessment",
+      "description": "Build a responsive, interactive catalog card component using HTML, CSS, and JS.",
+      "material": "The Capstone evaluates end-to-end frontend skills. You will detail how to build an interactive component by combining semantic markup, responsive media queries, and click action event listeners.",
+      "passingGrade": 75,
+      "order": 4,
+      "moduleType": "Mini Case Study",
+      "assessmentId": "assess_fe_final",
       "status": "ACTIVE"
     }
   ],
@@ -261,6 +373,134 @@
           "weight": 100,
           "questionIds": [
             "q_final_001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_ux_persona",
+      "moduleId": "mod_ux_persona",
+      "title": "UX Research Assessment",
+      "components": [
+        {
+          "label": "Written Persona Draft",
+          "weight": 100,
+          "questionIds": [
+            "q_ux_persona_001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_ux_wireframe",
+      "moduleId": "mod_ux_wireframe",
+      "title": "User Flow Assessment",
+      "components": [
+        {
+          "label": "User Flow Outline",
+          "weight": 100,
+          "questionIds": [
+            "q_ux_wireframe_001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_ux_design",
+      "moduleId": "mod_ux_design",
+      "title": "Visual Design & Figma Assessment",
+      "components": [
+        {
+          "label": "Multiple Choice Quiz",
+          "weight": 40,
+          "questionIds": [
+            "q_ux_design_001",
+            "q_ux_design_002"
+          ]
+        },
+        {
+          "label": "Visual Accessibility Task",
+          "weight": 60,
+          "questionIds": [
+            "q_ux_design_003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_ux_final",
+      "moduleId": "mod_ux_final",
+      "title": "UI/UX Capstone Assessment",
+      "components": [
+        {
+          "label": "Mini Case Study Portfolio",
+          "weight": 100,
+          "questionIds": [
+            "q_ux_final_001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_fe_htmlcss",
+      "moduleId": "mod_fe_htmlcss",
+      "title": "HTML & CSS Assessment",
+      "components": [
+        {
+          "label": "Multiple Choice Quiz",
+          "weight": 40,
+          "questionIds": [
+            "q_fe_htmlcss_001",
+            "q_fe_htmlcss_002"
+          ]
+        },
+        {
+          "label": "Responsive CSS Layout Task",
+          "weight": 60,
+          "questionIds": [
+            "q_fe_htmlcss_003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_fe_javascript",
+      "moduleId": "mod_fe_javascript",
+      "title": "JavaScript Core Assessment",
+      "components": [
+        {
+          "label": "JS Coding Task",
+          "weight": 100,
+          "questionIds": [
+            "q_fe_javascript_001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_fe_git",
+      "moduleId": "mod_fe_git",
+      "title": "Git & Version Control Assessment",
+      "components": [
+        {
+          "label": "Git Sequence Task",
+          "weight": 100,
+          "questionIds": [
+            "q_fe_git_001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assess_fe_final",
+      "moduleId": "mod_fe_final",
+      "title": "Frontend Capstone Assessment",
+      "components": [
+        {
+          "label": "Mini Case Study Portfolio",
+          "weight": 100,
+          "questionIds": [
+            "q_fe_final_001"
           ]
         }
       ]
@@ -331,6 +571,138 @@
       "question": "A company wants to identify high-performing applicants from a dataset. Write what data you need, how you would clean it, one SQL query example, one dashboard insight, and one recommendation.",
       "maxScore": 100,
       "rubricId": "rubric_final_assessment",
+      "order": 1
+    },
+    {
+      "id": "q_ux_persona_001",
+      "assessmentId": "assess_ux_persona",
+      "type": "TEXT_AREA",
+      "question": "You are designing a food delivery app for busy college students. Based on research showing that students often lack time between classes and have tight budgets, formulate 1 User Persona (Name, 2 pain points, and 2 core needs)!",
+      "maxScore": 100,
+      "rubricId": "rubric_ux_persona",
+      "order": 1
+    },
+    {
+      "id": "q_ux_wireframe_001",
+      "assessmentId": "assess_ux_wireframe",
+      "type": "TEXT_AREA",
+      "question": "Write down the step-by-step user flow (from Home screen to successful checkout) for a user who wants to purchase a book on an e-commerce app. Include a decision point in case the book is out of stock!",
+      "maxScore": 100,
+      "rubricId": "rubric_ux_wireframe",
+      "order": 1
+    },
+    {
+      "id": "q_ux_design_001",
+      "assessmentId": "assess_ux_design",
+      "type": "MULTIPLE_CHOICE",
+      "question": "Which Figma feature is used to create responsive components whose sizes automatically adjust to the content?",
+      "options": [
+        "Constraints",
+        "Auto Layout",
+        "Frame Scaling",
+        "Component Sets"
+      ],
+      "correctAnswer": "Auto Layout",
+      "maxScore": 20,
+      "order": 1
+    },
+    {
+      "id": "q_ux_design_002",
+      "assessmentId": "assess_ux_design",
+      "type": "MULTIPLE_CHOICE",
+      "question": "What is the minimum contrast ratio recommended by WCAG 2.1 Level AA for normal text?",
+      "options": [
+        "3:1",
+        "4.5:1",
+        "7:1",
+        "10:1"
+      ],
+      "correctAnswer": "4.5:1",
+      "maxScore": 20,
+      "order": 2
+    },
+    {
+      "id": "q_ux_design_003",
+      "assessmentId": "assess_ux_design",
+      "type": "TEXT_AREA",
+      "question": "Identify 3 visual accessibility problems commonly found in website design and explain how to address them!",
+      "maxScore": 60,
+      "rubricId": "rubric_ux_design",
+      "order": 3
+    },
+    {
+      "id": "q_ux_final_001",
+      "assessmentId": "assess_ux_final",
+      "type": "TEXT_AREA",
+      "question": "An e-learning app wants to increase course completion rates among its users. Create a brief UI/UX solution proposal covering: (1) 1 key research finding, (2) User flow to start a course, and (3) a user-friendly visual style guide (colors & typography).",
+      "maxScore": 100,
+      "rubricId": "rubric_ux_final",
+      "order": 1
+    },
+    {
+      "id": "q_fe_htmlcss_001",
+      "assessmentId": "assess_fe_htmlcss",
+      "type": "MULTIPLE_CHOICE",
+      "question": "Which CSS display value is best suited to create a flexible 1D layout container?",
+      "options": [
+        "block",
+        "inline",
+        "flex",
+        "grid"
+      ],
+      "correctAnswer": "flex",
+      "maxScore": 20,
+      "order": 1
+    },
+    {
+      "id": "q_fe_htmlcss_002",
+      "assessmentId": "assess_fe_htmlcss",
+      "type": "MULTIPLE_CHOICE",
+      "question": "Which HTML5 semantic tag is most appropriate to contain the main navigation links?",
+      "options": [
+        "section",
+        "div",
+        "nav",
+        "header"
+      ],
+      "correctAnswer": "nav",
+      "maxScore": 20,
+      "order": 2
+    },
+    {
+      "id": "q_fe_htmlcss_003",
+      "assessmentId": "assess_fe_htmlcss",
+      "type": "CODE_ANSWER",
+      "question": "Write a CSS rule to make a container class '.card-grid' use CSS grid with 3 equal columns, and stack vertically (1 column) when the screen width is 600px or less.",
+      "maxScore": 60,
+      "rubricId": "rubric_fe_htmlcss",
+      "order": 3
+    },
+    {
+      "id": "q_fe_javascript_001",
+      "assessmentId": "assess_fe_javascript",
+      "type": "CODE_ANSWER",
+      "question": "Write a JavaScript function called 'filterActiveUsers' that takes an array of user objects (each containing 'name' and 'status' properties) and returns a new array with only users whose status is 'ACTIVE'.",
+      "maxScore": 100,
+      "rubricId": "rubric_fe_javascript",
+      "order": 1
+    },
+    {
+      "id": "q_fe_git_001",
+      "assessmentId": "assess_fe_git",
+      "type": "TEXT_AREA",
+      "question": "Explain the sequence of Git commands required to create a new branch named 'feature-login', stage all changes, commit them with a message 'add login page', and push it to the remote repository.",
+      "maxScore": 100,
+      "rubricId": "rubric_fe_git",
+      "order": 1
+    },
+    {
+      "id": "q_fe_final_001",
+      "assessmentId": "assess_fe_final",
+      "type": "TEXT_AREA",
+      "question": "You need to build a responsive, interactive product card component. Describe: (1) The HTML structure, (2) The CSS properties for responsiveness, and (3) The JavaScript event listener required to alert 'Item added to cart' when a button is clicked.",
+      "maxScore": 100,
+      "rubricId": "rubric_fe_final",
       "order": 1
     }
   ],
@@ -599,6 +971,430 @@
           ]
         }
       ]
+    },
+    {
+      "id": "rubric_ux_persona",
+      "name": "UX Persona Rubric",
+      "criteria": [
+        {
+          "id": "persona_name",
+          "label": "Defines Persona Name",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "name",
+            "persona"
+          ]
+        },
+        {
+          "id": "persona_student",
+          "label": "Focuses on Students",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "student",
+            "college",
+            "university",
+            "campus"
+          ]
+        },
+        {
+          "id": "persona_pain",
+          "label": "Identifies Pain Points",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "pain",
+            "problem",
+            "frustration",
+            "struggle",
+            "challenge"
+          ]
+        },
+        {
+          "id": "persona_need",
+          "label": "Identifies Needs",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "need",
+            "needs",
+            "goal",
+            "solution",
+            "want"
+          ]
+        },
+        {
+          "id": "persona_constraints",
+          "label": "Mentions Budget or Time",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "budget",
+            "money",
+            "price",
+            "cost",
+            "time",
+            "busy",
+            "schedule",
+            "limit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rubric_ux_wireframe",
+      "name": "User Flow & Wireframe Rubric",
+      "criteria": [
+        {
+          "id": "flow_home",
+          "label": "Starts at Home screen",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "home",
+            "dashboard",
+            "landing"
+          ]
+        },
+        {
+          "id": "flow_search",
+          "label": "Includes Product Search",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "search",
+            "find",
+            "select",
+            "book"
+          ]
+        },
+        {
+          "id": "flow_cart",
+          "label": "Mentions Cart / Basket",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "cart",
+            "add",
+            "basket"
+          ]
+        },
+        {
+          "id": "flow_checkout",
+          "label": "Mentions Checkout / Payment",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "checkout",
+            "pay",
+            "payment",
+            "purchase"
+          ]
+        },
+        {
+          "id": "flow_decision",
+          "label": "Includes Stock Decision Point",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "stock",
+            "empty",
+            "alert",
+            "decision",
+            "if",
+            "out of stock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rubric_ux_design",
+      "name": "Visual Design Accessibility Rubric",
+      "criteria": [
+        {
+          "id": "access_problems",
+          "label": "Lists Accessibility Problems",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "contrast",
+            "size",
+            "font",
+            "color",
+            "alt",
+            "readability",
+            "hierarchy",
+            "spacing"
+          ]
+        },
+        {
+          "id": "access_solutions",
+          "label": "Suggests Practical Solutions",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "fix",
+            "change",
+            "increase",
+            "standards",
+            "wcag",
+            "auto layout",
+            "spacing",
+            "adjust"
+          ]
+        },
+        {
+          "id": "access_explanation",
+          "label": "Clear and Detailed Explanation",
+          "maxScore": 20,
+          "type": "LENGTH",
+          "minLength": 60
+        }
+      ]
+    },
+    {
+      "id": "rubric_ux_final",
+      "name": "UI/UX Capstone Rubric",
+      "criteria": [
+        {
+          "id": "cap_research",
+          "label": "Presents Key Research Finding",
+          "maxScore": 30,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "research",
+            "finding",
+            "interview",
+            "user",
+            "student",
+            "audience"
+          ]
+        },
+        {
+          "id": "cap_flow",
+          "label": "Outlines Course Start Flow",
+          "maxScore": 30,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "flow",
+            "step",
+            "start",
+            "course",
+            "module"
+          ]
+        },
+        {
+          "id": "cap_style",
+          "label": "Describes Style Guide",
+          "maxScore": 40,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "style",
+            "guide",
+            "color",
+            "colors",
+            "typography",
+            "font",
+            "brand",
+            "visual"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rubric_fe_htmlcss",
+      "name": "Responsive Grid Rubric",
+      "criteria": [
+        {
+          "id": "grid_display",
+          "label": "Uses display: grid",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "display: grid",
+            "display:grid",
+            "grid"
+          ]
+        },
+        {
+          "id": "grid_columns",
+          "label": "Defines 3 Columns",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "grid-template-columns",
+            "repeat(3",
+            "1fr 1fr 1fr"
+          ]
+        },
+        {
+          "id": "grid_media",
+          "label": "Uses @media query",
+          "maxScore": 20,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "@media",
+            "media",
+            "max-width",
+            "600px"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rubric_fe_javascript",
+      "name": "JS Array Filtering Rubric",
+      "criteria": [
+        {
+          "id": "js_func",
+          "label": "Declares function",
+          "maxScore": 30,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "function",
+            "const filterActiveUsers",
+            "filterActiveUsers ="
+          ]
+        },
+        {
+          "id": "js_filter",
+          "label": "Uses filter method",
+          "maxScore": 40,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "filter",
+            "for",
+            "forEach"
+          ]
+        },
+        {
+          "id": "js_condition",
+          "label": "Checks ACTIVE status",
+          "maxScore": 30,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "active",
+            "ACTIVE",
+            "status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rubric_fe_git",
+      "name": "Git Branch Commit Push Rubric",
+      "criteria": [
+        {
+          "id": "git_checkout",
+          "label": "Branch creation command",
+          "maxScore": 30,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "git checkout -b",
+            "git checkout",
+            "git switch -c",
+            "git branch"
+          ]
+        },
+        {
+          "id": "git_commit",
+          "label": "Staging and committing command",
+          "maxScore": 40,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "git add",
+            "git commit",
+            "add login page"
+          ]
+        },
+        {
+          "id": "git_push",
+          "label": "Push command to remote",
+          "maxScore": 30,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "git push",
+            "origin",
+            "feature-login"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rubric_fe_final",
+      "name": "Frontend Capstone Rubric",
+      "criteria": [
+        {
+          "id": "fe_markup",
+          "label": "Describes HTML elements",
+          "maxScore": 30,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "html",
+            "div",
+            "button",
+            "semantic",
+            "markup",
+            "tag"
+          ]
+        },
+        {
+          "id": "fe_style",
+          "label": "Describes CSS responsive styling",
+          "maxScore": 30,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "css",
+            "media",
+            "flex",
+            "grid",
+            "responsive",
+            "style"
+          ]
+        },
+        {
+          "id": "fe_script",
+          "label": "Describes JS action event",
+          "maxScore": 40,
+          "type": "KEYWORD",
+          "match": "ANY",
+          "requiredKeywords": [
+            "javascript",
+            "click",
+            "addEventListener",
+            "alert",
+            "event",
+            "button"
+          ]
+        }
+      ]
     }
   ],
   "progress": [],
@@ -647,6 +1443,66 @@
         "mod_sql",
         "mod_cleaning",
         "mod_dashboard"
+      ],
+      "minimumScore": 75,
+      "status": "OPEN"
+    },
+    {
+      "id": "job_ux_001",
+      "title": "UI/UX Designer Intern",
+      "company": "PT Sinergi Kreatif",
+      "location": "Jakarta",
+      "workType": "Hybrid",
+      "employmentType": "Internship",
+      "description": "Conduct user research, design wireframes, build high-fidelity layouts, and test user experiences.",
+      "requiredModuleIds": [
+        "mod_ux_persona",
+        "mod_ux_wireframe"
+      ],
+      "minimumScore": 70,
+      "status": "OPEN"
+    },
+    {
+      "id": "job_ux_002",
+      "title": "Product Design Intern",
+      "company": "PixelPerfect Labs",
+      "location": "Jakarta",
+      "workType": "Onsite",
+      "employmentType": "Internship",
+      "description": "Collaborate on responsive interface design, build Figma component systems, and present capstone design ideas.",
+      "requiredModuleIds": [
+        "mod_ux_design",
+        "mod_ux_final"
+      ],
+      "minimumScore": 70,
+      "status": "OPEN"
+    },
+    {
+      "id": "job_fe_001",
+      "title": "Frontend Developer Intern",
+      "company": "PT Tech Nusantara",
+      "location": "Jakarta",
+      "workType": "Hybrid",
+      "employmentType": "Internship",
+      "description": "Build clean web markup, style responsive grids using Flexbox/CSS Grid, and write dynamic scripting in JavaScript.",
+      "requiredModuleIds": [
+        "mod_fe_htmlcss",
+        "mod_fe_javascript"
+      ],
+      "minimumScore": 75,
+      "status": "OPEN"
+    },
+    {
+      "id": "job_fe_002",
+      "title": "React Developer Intern",
+      "company": "Innovate Web",
+      "location": "Remote",
+      "workType": "Remote",
+      "employmentType": "Internship",
+      "description": "Work with Git workflow pipelines, manage complex application layouts, and deliver high quality frontend widgets.",
+      "requiredModuleIds": [
+        "mod_fe_git",
+        "mod_fe_final"
       ],
       "minimumScore": 75,
       "status": "OPEN"
